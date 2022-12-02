@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #ece4e4;
+  background-color: #fffafa;
 }
 
 nav {
@@ -42,6 +42,14 @@ nav button {
   /* border: 3px solid yellow */
 }
 
+.icons  {
+  margin: auto 2rem;
+  width:max-content;
+}
+.icons i {
+  margin-right:1rem;
+}
+
 
 .status{
   display: flex;
@@ -52,26 +60,37 @@ nav button {
   padding: 1rem;
   padding-right: 0;
   margin-right: 0;
+  border:1px solid rgb(192, 189, 189);
+  border-radius: 7px;
+
 
 }
 
 .container {
-  display: flex;
-  padding:0 8rem;
+display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 2rem;
+    padding: 0 10rem;
+    text-align: center;
+    margin: auto;
+    justify-content: space-between;
 }
 
+.sidebar {
+  padding:3rem 5rem 0 1rem;
+}
 .myprofile {
-  display: flex;
-  justify-content: center;
-  margin: 2rem auto;
-  width: fit-content;
-  padding: 1rem;
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 .myprofile img {
   width: 60px;
   height: 70px;
   border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 1rem;
 }
 
 .all  {margin: 3px;}
@@ -83,12 +102,165 @@ nav button {
  .myprofile a {
   text-decoration: none;
   color: rgb(4, 127, 250);
-  margin-left: 10px;
- }
-
- .myprofile p {
-  margin-left: 10px;
- }
-
  
+ }
+ 
+ .first {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 'img div . a';
+  gap: 4em;
+  margin-top: .5rem;
+ }
+
+  .first div {
+    grid-area: div;
+  }
+  
+  .first img {
+    grid-area: img;
+  }
+  
+  .first a {
+    grid-area: a;
+    ;
+  }
+  
+
+ .first a{
+ text-decoration: none;
+color: rgb(4, 127, 250); 
+ }
+
+.suggestions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: justify;
+  font-size: 14px;
+}
+
+.suggestions a {
+  margin: 0 0 0 7.7rem;
+  text-decoration: none;
+    color: rgb(4, 127, 250);
+
+}
+ .first img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+ }
+
+ .first a {
+  justify-content: flex-end;
+ }
+
+ .first small {font-size: 10px;}
+ .sidebarfooter {
+  margin: 2rem;
+ }
+ .sidebarfooter a{
+  color: gray;
+  text-decoration: none;
+
+ }
+ .sidebarfooter p{
+  color: gray;
+  margin: 1rem;
+ }
+
+ .contentwrapper {
+  background-color: white;
+  text-align: justify;
+    border: 1px solid rgb(192, 189, 189);
+    border-radius: 5px;
+
+ }
+ .contentwrapper .contentheader img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 1rem;
+ }
+
+.contentheader {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.contentheader .contentflex {
+  display: flex;
+}
+
+.contentbody img {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.signup {
+  margin: 0;
+}
+.signup button {
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  justify-content: space-between;
+  border: none;
+  background-color: rgb(4, 4, 116);
+  color: white;
+  margin: 0;
+  position: relative;
+  bottom: .5rem;
+
+}
+
+.signup button p,.signup button i {
+  margin: auto 0;
+  padding:1rem .5rem;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-between;
+  padding: .3rem 1rem;
+  font-size: 1.5rem;
+}
+.flexone i {
+  margin: 0 5px;
+}
+.para  {
+  padding: 0 1rem;
+}.para p {
+  margin-bottom: 10px;
+  margin-top: 0;
+} .para :nth-child(3) {
+  color: gray;
+}
+
+.comment {
+  border-top: 1px solid rgb(192, 189, 189);
+
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: 40px;
+}
+
+.comment .flex2 {
+    display: flex;
+}
+
+.flex2 i, .flex2 p, .comment a {
+  margin: auto 0;
+}
+.comment a  {
+  text-decoration: none;
+    color: rgb(4, 127, 250);
+
+}
+
+.flex2 i {
+  margin-right: 1rem;
+}
 
